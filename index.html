@@ -1,39 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  background-color: black;
-  font-family: cursive;
-}
-
-.glow {
-  font-size: 35px;
-  color: rgb(33, 23, 122);
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0a3d6d, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px rgb(95, 167, 209), 0 0 30px #71adc9, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-</style>
-</head>
-<body>
-
-<h1 class="glow">Simple Calculator</h1>
-<h1 class="glow"><font size="4 ">Created by Shariq Siddiqui</font></h1>
-</body>
-</html> 
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -44,10 +9,8 @@ body {
 <body>
 
 <style>
-body {
-
-background-image: url(./tech\ background.jpg);
-background-attachment: fixed;
+body
+{background-image: url(./oleg-laptev-7jQh3EiS8Bs-unsplash.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 
@@ -55,14 +18,14 @@ background-size: cover;
 }
 </style>
 
-<!--<center><h1 style= "color:rgb(132, 186, 211)">
+<center><h1>
 Simple Calculator
-	</h1>
+</h1>
 </center>
-<center><h3 style= "color:rgb(132, 186, 211)">
-	(Created by Shariq Siddiqui)
-	</h3>
-	</center> -->
+<center><h3>
+(Created by Shariq Siddiqui)
+</h3>
+</center>
 	<style type="text/css">
 		table {
 			border-collapse: collapse;
@@ -71,7 +34,7 @@ Simple Calculator
 		td {
 			padding: 24px;
 			text-align: center;
-			border: 3px solid rgb(45, 144, 190);
+			border: 3px solid rgb(0, 0, 0);
 			cursor: pointer;
 		}
 		input[type="text"] {
@@ -93,18 +56,18 @@ Simple Calculator
 		
 		<tr>
 		
-		    <td onclick="addToDisplay('1')"> <b><font color="ffffff">1</font></b></td>
-			<td onclick="addToDisplay('2')"><b><font color="ffffff">2</font></b></td>
-			<td onclick="addToDisplay('3')"><b><font color="ffffff">3</font></b></td>
-			<td onclick="addToDisplay('+')"><b><font color="ffffff">+</font></b></td>
+		    <td onclick="addToDisplay('1')"> <b><font color="00000">1</font></b></td>
+			<td onclick="addToDisplay('2')"><b><font color="00000">2</font></b></td>
+			<td onclick="addToDisplay('3')"><b><font color="00000">3</font></b></td>
+			<td onclick="addToDisplay('+')"><b><font color="00000" size="5">+</font></b></td>
 		</tr>
 		<tr>
-			<td onclick="addToDisplay('4')"><b><font color="ffffff">4</font></b></td>
-			<td onclick="addToDisplay('5')"><b><font color="ffffff">5</font></b></td>
-			<td onclick="addToDisplay('6')"><b><font color="ffffff">6</font></b></td>
-			<td onclick="addToDisplay('-')"><b><font color="ffffff">-</font></b></td>
+			<td onclick="addToDisplay('4')"><b><font color="000000">4</font></b></td>
+			<td onclick="addToDisplay('5')"><b><font color="00000">5</font></b></td>
+			<td onclick="addToDisplay('6')"><b><font color="000000">6</font></b></td>
+			<td onclick="addToDisplay('-')"><b><font color="000000" size="5">-</font></b></td>
 		</tr>
-
+<!--
 		<center><div style="position: fixed;
             bottom: 300px;
             left: 300px;
@@ -115,22 +78,21 @@ Simple Calculator
             opacity: 0.1;">
 SHARIQ SIDDIQUI
 </div>
-</center>
-
+</center>-->
 		<tr>
-			<td onclick="addToDisplay('7')"><b><font color="ffffff">7</font></b></td>
-			<td onclick="addToDisplay('8')"><b><font color="ffffff">8</font></b></td>
-			<td onclick="addToDisplay('9')"><b><font color="ffffff">9</font></b></td>
-			<td onclick="addToDisplay('*')"><b><font color="ffffff">*</font></b></td>
+			<td onclick="addToDisplay('7')"><b><font color="00000">7</font></b></td>
+			<td onclick="addToDisplay('8')"><b><font color="00000">8</font></b></td>
+			<td onclick="addToDisplay('9')"><b><font color="00000">9</font></b></td>
+			<td onclick="addToDisplay('*')"><b><font color="000000" size="5">*</font></b></td>
 		</tr>
 		<tr>
-			<td onclick="addToDisplay('0')"><b><font color="ffffff">0</font></b></td>
-			<td onclick="addToDisplay('.')"><b><font color="ffffff">.</font></b></td>
-			<td onclick="clearDisplay()"><b><font color="ffffff">c</font></b></td>
-			<td onclick="addToDisplay('/')"><b><font color="ffffff">/</font></b></td>
+			<td onclick="addToDisplay('0')"><b><font color="00000">0</font></b></td>
+			<td onclick="addToDisplay('.')"><b><font color="000000" size="5">.</font></b></td>
+			<td onclick="clearDisplay()"><b><font color="000000" size="4">c</font></b></td>
+			<td onclick="addToDisplay('/')"><b><font color="00000" size="5">/</font></b></td>
 		</tr>
 		<tr>
-			<td colspan="4" onclick="calculate()"><b><font color="ffffff">=</font></b></td>
+			<td colspan="4" onclick="calculate()"><b><font color="000000" size="5">=</font></b></td>
 		</tr>
 
 	</table>
